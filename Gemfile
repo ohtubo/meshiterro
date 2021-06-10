@@ -62,3 +62,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #認証機能を提供
 gem 'devise'
+#画像の投稿機能
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+#アップロードした画像のリサイズを行えるgem
+gem "refile-mini_magick"
+#ページングの機能を実装、1つのページに表示できる数を制限
+gem 'kaminari','~> 1.2.1'
